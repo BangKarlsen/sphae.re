@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700|Inconsolata:700');
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 4.5em;
+    margin-bottom: 0px;
+    margin-top: 65px;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.45em;
+    margin-top: -3px;
+}
+
+#tv {
+    height: 483px;
+    margin: 75px auto 50px auto;
+    width: 700px;
+}
+
+#channelButtons {
+    margin: 50px auto 30px auto;
+    width: 370px;
+}
+
+button {
+    height: 21px;
+    width: 70px;
+}
+
+#targetcanvas {
+    position: relative;
+    left: 65px;
+    top: -435px;
+    outline: none;
+}
