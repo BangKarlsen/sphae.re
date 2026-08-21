@@ -1,9 +1,11 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 body {
   margin: 0;
+  background: #fff;
+  color: #000;
   font-family: system-ui, sans-serif;
   display: flex;
   min-height: 100vh;
