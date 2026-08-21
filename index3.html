@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sphae.re</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main>
+    <canvas id="boxes-canvas" width="410" height="300"></canvas>
+  </main>
+  <script>
+    // must be global to be visible to the boxes.pde sketch
+    var canvasSize = { width: 410, height: 300 };
+  </script>
+  <script src="/js/processing-1.4.8.min.js"></script>
+  <script>
+    Processing.loadSketchFromSources(document.getElementById('boxes-canvas'), ['/processing/boxes.pde']);
+  </script>
+</body>
+</html>
