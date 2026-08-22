@@ -1,6 +1,6 @@
 // TWEAK THESE THREE PARAMS
 int numberOfBoxes = 23;
-float rotationSpeed = 0.001;
+float rotationSpeed = 0.0001;
 int blinkTimeInMillis = 40;
 
 
@@ -48,17 +48,18 @@ void draw() {
 
     rotationRadians += rotationSpeed;    
     for (int boxNo = 0; boxNo < numberOfBoxes; boxNo++) {
-        int boxSize = boxNo * 8;
         pushMatrix();
-        float shift = (float)boxSize / 500.0;
-        rotateX(rotationRadians + shift * 0.3 * sin(millis() / 1000) + 0.445 * (millis() / 1000));
-        rotateY(rotationRadians + shift * 0.9 * sin(millis() / 1000) + 1.445 * (millis() / 1000));
-        rotateZ(rotationRadians + shift * 1.1 * sin(millis() / 1000) + 2.445 * (millis() / 1000));
+        float shift = (float)boxSize / 250.0;
+        float time = millis() / 1000;
+        rotateX(0.005 * rotationRadians + shift * 4.3 * sin(time * 0.23) + 0.445 * 0.85 * time);
+        rotateY(0.005 * rotationRadians + shift * 6.9 * sin(time * 0.03) + 0.045 * 0.65 * time);
+        rotateZ(0.005 * rotationRadians + shift * 1.1 * sin(time) + 2.445 * 0.75 * time);
         if (blinkBoxIndex == boxNo) {
             stroke(pink);
         } else {
             stroke(black);
         }
+        int boxSize = boxNo * 8;
         box(boxSize);
         popMatrix();
     }
