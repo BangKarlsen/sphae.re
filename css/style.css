@@ -17,3 +17,10 @@ body {
 main {
   padding: 2rem;
 }
+
+.featured-image {
+  display: block;
+  width: 410px;
+  max-width: 100%;
+  height: auto;
+}
