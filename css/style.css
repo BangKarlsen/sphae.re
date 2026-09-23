@@ -21,6 +21,6 @@ main {
 .featured-image {
   display: block;
   width: 410px;
-  max-width: 100%;
+  max-width: calc(100vw - 4rem);
   height: auto;
 }
