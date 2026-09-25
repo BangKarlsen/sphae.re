@@ -21,7 +21,7 @@
   const drawScreen = (tick, screen) => {
     // Calculate the shift values out of the animation value
     const shiftX = 0.1 * tick;
-    const shiftY = 0.1 * tick;
+    const shiftY = 20 * Math.sin(tick / 200);
 
     for (let x = 0; x < width; x++) {
       for (let y = 0; y < height; y++) {
