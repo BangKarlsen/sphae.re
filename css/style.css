@@ -24,3 +24,10 @@ main {
   max-width: calc(100vw - 4rem);
   height: auto;
 }
+
+.tunnel-canvas {
+  display: block;
+  width: 410px;
+  max-width: calc(100vw - 4rem);
+  height: auto;
+}
